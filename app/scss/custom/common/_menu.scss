@@ -4,19 +4,19 @@ $menu-width   : 250px;
 $header-height: 60px;
 $logo-height  : 15px;
 
-.menu-header {
+.menu-main-container {
+    transition: background-color 0.2s ease;
     display: block;
     position: fixed;
     margin: 0 auto;
     width: 100%;
     max-width: 100%;
     box-shadow: none;
-    background-color: $white;
+    background-color: transparent;
     position: fixed;
     height: $header-height!important;
     z-index: 10;
 }
-
 .menu-container {
     height: 100%;
     position: fixed;
@@ -24,7 +24,7 @@ $logo-height  : 15px;
     width: $menu-width;
     margin-top: $header-height;
     transform: translateX($menu-width);
-    background: $white;
+    background-color: white;
 }
 .menu{
     margin-top: 40px;
@@ -65,7 +65,6 @@ $logo-height  : 15px;
       display: block;
     }
 }
-
 .menu__logo {
     position: inherit;
     height: $logo-height;
@@ -109,12 +108,16 @@ $logo-height  : 15px;
 .menu-toggle-checkbox {
   display: none;
 }
-
+.menu-main-container:hover {
+  background-color: white;
+}
 /*
  * Animation
  */
-
 .menu-animation {//must keep the hierarchy to work
+  &.menu-main-container{
+    background-color: white;
+  }
   .menu-container {
     transition: transform 250ms ease-in-out;
     -webkit-transition: -webkit-transform 250ms ease-in-out; /* Chrome < 26, Safari < 7 */
@@ -147,7 +150,7 @@ $logo-height  : 15px;
   .menu-toggle--trigger {
     display: none;
   }
-  .menu-header {
+  .menu-main-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -157,6 +160,7 @@ $logo-height  : 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: transparent;
     margin-top: 0;
     width: auto;
     position: absolute;
