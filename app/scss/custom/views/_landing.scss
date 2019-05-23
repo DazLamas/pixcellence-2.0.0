@@ -1,38 +1,45 @@
 /* landing.scss */
 .banner-landing {
-  height: 100vh;
+  height: 600px;
   width: 100%;
-  padding-top: 10em;
-  background: url('../img/landing/robotic-hands/robotic-hands-1024.jpg');
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/landing/robotic-hands/robotic-hands-1440.png', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/landing/robotic-hands/robotic-hands-1440.png', sizingMethod='scale')";
-  //Responsive:
-  @media (min-width: 992px) {
-    background-image: url('../img/landing/robotic-hands/robotic-hands-1200.jpg');
-  };
-  @media (min-width: 1200px) {
-    background-image: url('../img/landing/robotic-hands/robotic-hands-1440.jpg');
-  };
-  @media (min-width: 1440px) {
-    background-image: url('../img/landing/robotic-hands/robotic-hands-1920.jpg');
-  };
-  .banner__title {
+  padding-top: 6.5em;
+  padding-top: 120px;
+  background: url('../img/landing/robot-circle_1920.jpg');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/landing/robot-circle_1920.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/landing/robot-circle_1920.png', sizingMethod='scale')";
+  .banner-landing__title {
     font-family: 'Roboto Condensed';
-    font-size: 45px;
-    letter-spacing: .3px;
-    color: #F2F2F2;
-  }
-  .banner__subtitle {
-    font-family: 'Roboto';
+    font-size: 28px;
     font-weight: 100;
     letter-spacing: 1px;
-    font-size: 16px;
-    color: #F2F2F2;
+    color: #f2f2f2;
   }
-  @media (max-width: 780px) {
-    height: 600px;
-    padding-top: 6.5em;
+  .banner-landing__subtitle {
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-family: 'Roboto';
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #f2f2f2;
   }
+  //Responsive:
+  @media (min-width: 992px) {
+    padding-top: 150px;
+    background-image: url('../img/landing/robot-circle_1920.jpg');
+  };
+  @media (min-width: 1200px) {
+    height: 100vh;
+    background-image: url('../img/landing/robot-circle_1920.jpg');
+    &__title {
+      font-size: 38px;
+    }
+    &__subtitle {
+      font-size: 14px;
+    }
+  };
+  @media (min-width: 1440px) {
+    background-image: url('../img/landing/robot-circle_1920.jpg');
+  };
 }
 
 
