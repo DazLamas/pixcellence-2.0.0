@@ -2,17 +2,17 @@
 
 $menu-width   : 250px;
 $header-height: 60px;
-$logo-height  : 15px;
+$logo-height  : 17px;
 
 .menu-main-container {
-    transition: background-color 0.2s ease;
+    transition: background-color 0.4s ease-in;
     display: block;
     position: fixed;
     margin: 0 auto;
     width: 100%;
     max-width: 100%;
     box-shadow: none;
-    background-color: transparent;
+    background-color: #ffffff0a;
     position: fixed;
     height: $header-height!important;
     z-index: 10;
@@ -42,7 +42,7 @@ $logo-height  : 15px;
 .menu__link{
     cursor: pointer;
     list-style: none;
-    color: $black;
+    color: #d8d8d8;
     font-family: 'open sans';
     font-size: 12px;
     font-weight: bold;
@@ -68,6 +68,7 @@ $logo-height  : 15px;
 .menu__logo {
     position: inherit;
     height: $logo-height;
+    width: auto;
     margin-top: ($header-height - $logo-height)/2;
 }
 .menu__button {
@@ -93,7 +94,7 @@ $logo-height  : 15px;
         position: relative;
         transition: all 0.3s;
         box-sizing: border-box;
-        background-color: black;
+        background-color: #d8d8d8;
         float: left;
         height: 3px;
         width: 100%;
@@ -110,10 +111,16 @@ $logo-height  : 15px;
 }
 .menu-main-container:hover {
   background-color: white;
+  .menu__link {
+    color: $black;
+  }
+  .menu__button {
+    @extend .btn-outline-primary;
+  }
 }
 /*
- * Animation
- */
+// Animation
+*/
 .menu-animation {//must keep the hierarchy to work
   &.menu-main-container{
     background-color: white;
@@ -178,7 +185,7 @@ $logo-height  : 15px;
     &__item {
       margin-bottom: 0;
       width: auto;
-      margin-right: 20px;
+      margin-right: 35px;
       &--end {
         position: inherit;
         margin-left: 20px;
@@ -186,11 +193,11 @@ $logo-height  : 15px;
     }
     &__link {
       font-family: 'Roboto';
-      font-weight: 300;
-      font-size: 15px;
+      font-weight: 100;
+      font-size: 14px;
       line-height: normal;
-      letter-spacing: 0.03em;
-      color: $gray-600;
+      letter-spacing: 0.05em;
+      color: white;
       text-transform: none;
       margin-top: 7px; //Related
       &-underline {
