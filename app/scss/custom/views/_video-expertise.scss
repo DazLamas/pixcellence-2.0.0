@@ -20,20 +20,6 @@
     height: 600px;
     padding-top: 6.5em;
   }
-  //
-  // .banner__title {
-  //   font-family: 'Roboto Condensed';
-  //   font-size: 45px;
-  //   letter-spacing: .3px;
-  //   color: #F2F2F2;
-  // }
-  // .banner__subtitle {
-  //   font-family: 'Roboto';
-  //   font-weight: 100;
-  //   letter-spacing: 1px;
-  //   font-size: 16px;
-  //   color: #F2F2F2;
-  // }
   &__text-box {
     margin-top: 110px;
     margin-left: 5.5%;
@@ -172,7 +158,7 @@ $phone-text-aside-width: 40px + 290px; //padding+w
       }
       .text {
         max-width: 240px;
-        font-family: 'Open Sans Condensed';
+        font-family: 'Open Sans Condensed', sans-serif;
         font-weight: 300;
         font-size: 26px;
         line-height: normal;
