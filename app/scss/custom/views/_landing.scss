@@ -516,8 +516,10 @@ $banner-semantic-bottom-padding: 40px;
   padding-top: 43px;
   padding-bottom: 43px;
   background-color: #F2F2F2;
-  p {
-    max-width: 45%;
+  &__text {
+    width: 45%;
+    max-width: 730px;
+    min-width: 490px;
     color: #2F80ED;
     text-align: center;
     font-family: 'Open Sans';
@@ -526,7 +528,7 @@ $banner-semantic-bottom-padding: 40px;
     line-height: normal;
     letter-spacing: .03em;
     @media (max-width: 1300px) {
-      max-width: 70%;
+      width: 70%;
     }
   }
 }
