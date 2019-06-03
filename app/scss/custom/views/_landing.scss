@@ -537,67 +537,80 @@ $banner-semantic-bottom-padding: 40px;
   height: auto;
   background: #2F80ED;
   width: 100%;
+  flex-direction: column;
   display: flex;
   align-items: center;
   padding-left: 5.5%;
-  .column-1 {
-    width: 35%;
-  }
-  .column-2 {
-    width: 65%;
-  }
-  .banner-map__text{
-    justify-content: flex-end;
+  // .wrapper {
+  //   display: flex;
+  //   flex-direction: column;
+  //   width: 100%;
+  // }
+  &__text-cont {
+    padding-left: 0;
+    margin-bottom: 2em;
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
-    // padding-left: 180px;
-    h2 {
+    > * {
+      text-align: center;
+      padding: 0 30px;
+    }
+    .title {
       font-family: 'Signika';
       font-weight: normal;
       font-size: 60px;
       line-height: 60px;
-      text-align: right;
       letter-spacing: 0.02em;
       margin-bottom: .5em;
       color: #F2F2F2;
     }
-    p {
+    .text {
       font-family: 'Open Sans';
       font-weight: 300;
       font-size: 20px;
       line-height: 31px;
-      text-align: right;
       letter-spacing: 0.06em;
       color: #F2F2F2;
+      max-width: 565px;
+      align-self: center;
     }
   }
-  .banner-map__img-cont {
+  &__img-cont {
+    text-align: center;
     img {
-      margin-left: 15%;
-      width: 576px;
+      margin-left: 0;
+      width: 80%;
     }
   }
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    display:flex;
-    .banner-map__text {
-      padding-left: 0;
-      margin-bottom: 2em;
-      margin-top: 2em;
-      h2, p {
-        text-align: center;
-        padding: 0 30px;
+  &__column-1,
+  &__column-2 {
+    width: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    &__text-cont{
+      justify-content: flex-end;
+      display: flex;
+      flex-direction: column;
+      // padding-left: 180px;
+      .title,
+      .text {
+        max-width: 365px;
+        align-self: flex-end;
+        text-align: right;
       }
     }
-    .banner-map__img-cont {
-      text-align: center;
-      img {
-        margin-left: 0;
-        width: 80%;
-      }
+    &__img-cont img{
+        margin-left: 15%;
+        width: 576px;
     }
-    .column-1, .column-2 {
-      width: 100%;
+    &__column-1 {
+      width: 35%;
+    }
+    &__column-2 {
+      width: 65%;
     }
   }
 
