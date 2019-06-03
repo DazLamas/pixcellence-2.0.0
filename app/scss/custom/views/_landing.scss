@@ -513,22 +513,22 @@ $banner-semantic-bottom-padding: 40px;
   width: 100%;
   justify-content: center;
   display: flex;
-  padding-top: 43px;
-  padding-bottom: 43px;
+  padding: 43px 43px;
   background-color: #F2F2F2;
   &__text {
-    width: 45%;
+    width: 90%;
     max-width: 730px;
-    min-width: 490px;
+    min-width: 0;
     color: #2F80ED;
     text-align: center;
     font-family: 'Open Sans';
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.250em;
     line-height: normal;
     letter-spacing: .03em;
-    @media (max-width: 1300px) {
-      width: 70%;
+    @media (min-width: 576px) {
+      width: 60%;
+      // font-size: 22px;
     }
   }
 }
@@ -561,7 +561,7 @@ $banner-semantic-bottom-padding: 40px;
     .title {
       font-family: 'Signika';
       font-weight: normal;
-      font-size: 60px;
+      font-size: 3.750em;
       line-height: 60px;
       letter-spacing: 0.02em;
       margin-bottom: .5em;
