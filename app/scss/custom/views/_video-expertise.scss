@@ -42,13 +42,13 @@
   @media (min-width: 992px) {
     background-image: url('../img/video-expertise/3.jpg');
     height: 100vh;
-    justify-content: flex-end;
   };
   @media (min-width: 1200px) {
     background-image: url('../img/video-expertise/3.jpg');
   };
   @media (min-width: 1440px) {
     background-image: url('../img/video-expertise/3.jpg');
+    justify-content: center;
   };
 }
 .banner-advantages {
