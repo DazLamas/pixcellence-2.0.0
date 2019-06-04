@@ -26,13 +26,17 @@
   }
 }
 .banner-semantic-frontpage {
-  background: url('../img/drive-safe/taxi/taxi-grid_1600.png');
+  background-image: url('../img/machine-learning/taxi-992.jpg');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/machine-learning/taxi-992.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/machine-learning/taxi-992.jpg', sizingMethod='scale')";
+  transition: background-image 0.4s ease-in;
   height: 700px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  .banner-semantic-frontpage__header {
+  overflow: auto;
+  &__header {
     margin: 0 50px 50px 0;
     width: 300px;
     .extra-text {
@@ -61,6 +65,26 @@
       color: #fff;
     }
   }
+
+  //Responsive
+  @media (min-width: 992px) {
+    background-image: url('../img/machine-learning/taxi-1200.jpg');
+  };
+  @media (min-width: 1200px) {
+    background-image: url('../img/machine-learning/taxi-1440.jpg');
+  };
+  @media (min-width: 1440px) {
+    background-image: url('../img/machine-learning/taxi-1600.jpg');
+  };
+  @media (min-width: 1600px) {
+    background-image: url('../img/machine-learning/taxi-1920.jpg');
+  };
+
+  //Animation
+  &.overlay-bg {
+    background-image: url('../img/machine-learning/taxi-1600-overlay.png');
+  }
+
 }
 .banner-drivesafe {
   display: flex;
@@ -149,16 +173,6 @@
   flex-direction: row;
   height: 475px;
 }
-// .more-applications__row__img{
-//   width: 50%;
-//   background-size: 100% auto;
-//   &.conference {
-//     background: url('../img/machine-learning/conference-room.png');
-//   }
-//   &.parking{
-//     background: url('../img/machine-learning/parking.png');
-//   }
-// }
 .more-applications__row__text {
   width: 50%;
   padding: 0 10%;

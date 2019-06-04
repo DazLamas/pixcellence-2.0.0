@@ -370,7 +370,10 @@ $banner-semantic-bottom-padding: 40px;
 .banner-semantic {
   height: 472px;
   width: 100%;
-  background: url('../img/drive-safe/guy-road-grid_1024.jpg');
+  transition: background-image 0.4s ease-in;
+  background-image: url('../img/landing/guy-road_1024.jpg');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/landing/guy-road-992.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/landing/guy-road-992.jpg', sizingMethod='scale')";
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -437,6 +440,8 @@ $banner-semantic-bottom-padding: 40px;
   //   color: white;
   //   border-color: #f7f7f7;
   // }
+
+  //Responsive
   @include media-breakpoint-up(sm) {
     height: 432px;
     &__content--wrapper {
@@ -463,6 +468,24 @@ $banner-semantic-bottom-padding: 40px;
       line-height: $banner-semantic-bottom-padding;
     }
   }
+  // @media (min-width: 992px) {
+  //   background-image: url('../img/landing/guy_road_1200.jpg');
+  // };
+  // // @media (min-width: 1200px) {
+  // //   background-image: url('../img/landing/guy_road_1440.jpg');
+  // // };
+  // // @media (min-width: 1440px) {
+  // //   background-image: url('../img/landing/guy_road_1600.jpg');
+  // // };
+  // // @media (min-width: 1600px) {
+  // //   background-image: url('../img/landing/guy_road_1920.jpg');
+  // // };
+
+  //Animation
+  &.overlay-bg {
+    background-image: url('../img/landing/guy-road_1024_overlay.png');
+  }
+
 }
 .banner-homehub {
   width: 100%;
