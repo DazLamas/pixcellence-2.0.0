@@ -1,6 +1,6 @@
 {
   "name": "pixcellence-website",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Pixcellence Inc. Official Website",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,8 @@
     "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1"
+    "bootstrap": "^4.3.1",
+    "tar": ">=2.2.2",
+    "fstream": ">=1.0.12"
   }
 }
