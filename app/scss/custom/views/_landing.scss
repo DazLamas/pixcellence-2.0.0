@@ -4,7 +4,7 @@
   width: 100%;
   padding-top: 120px;
   padding-left: 15%;
-  background: url('../img/landing/robot-circle_1920.jpg');
+  background: url('../img/landing/robot-circle_992.jpg');
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/landing/robot-circle_1920.png', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/landing/robot-circle_1920.png', sizingMethod='scale')";
   &__title {
@@ -26,11 +26,11 @@
   @media (min-width: 992px) {
     padding-left: 17%;
     padding-top: 190px;
-    background-image: url('../img/landing/robot-circle_1920.jpg');
+    background-image: url('../img/landing/robot-circle_1200.jpg');
   };
   @media (min-width: 1200px) {
     height: 100vh;
-    background-image: url('../img/landing/robot-circle_1920.jpg');
+    background-image: url('../img/landing/robot-circle_1440.jpg');
     &__title {
       font-size: 30px;
     }
@@ -39,6 +39,9 @@
     }
   };
   @media (min-width: 1440px) {
+    background-image: url('../img/landing/robot-circle_1600.jpg');
+  };
+  @media (min-width: 1920px) {
     background-image: url('../img/landing/robot-circle_1920.jpg');
   };
 }
