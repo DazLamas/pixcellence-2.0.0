@@ -3,11 +3,14 @@
 *Website development, UX and Design for Pixcellence Inc*
 
 **Technologies:**
-- Boostrap
-- Figma
-- Grid Layout
-- Gulp
+- BEM-notation
+- Javascript
+- CSS Animations
 - SASS
 - Git
+- Boostrap
+- Grid Layout
+- Gulp
+- Figma for UX
 
-*Check it: https://dazlamas.github.io/pixcellence-demo/*
+*Check it: https://dazlamas.github.io/pixcellence-1.1.0*
