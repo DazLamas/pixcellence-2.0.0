@@ -22,6 +22,18 @@
     isOpen = true;
   };
 
+  function isDesktop() {
+   return screenWidth >= 1024;
+  };
+
+  function toggleMenuBg() {
+    if ($(window).scrollTop() > 50 && isDesktop()) {
+        $('.menu-main-container').addClass('highligthed-menu');
+    } else {
+        $('.menu-main-container').removeClass('highligthed-menu');
+    };
+  };
+
   menuBtn.addEventListener('click', function(event){
     if(isOpen) {
       closeMenu();
@@ -30,15 +42,13 @@
     };
   });
 
+  //Listeners
   window.addEventListener('resize', function(event){
     closeMenu();
   });
 
+  $(window).bind('scroll', function () {
+    toggleMenuBg();
+  });
+
 }(window, document));
-
-
-
-
-// function isDesktop() {
-  //  return screenWidth >= 1024;
-  // };
