@@ -26,9 +26,9 @@
   }
 }
 .banner-semantic-frontpage {
-  background-image: url('../img/machine-learning/taxi-992.jpg');
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/machine-learning/taxi-992.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/machine-learning/taxi-992.jpg', sizingMethod='scale')";
+  background-image: url('../img/machine-learning/taxi-1600-overlay');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/machine-learning/taxi-1600-overlay', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/machine-learning/taxi-1600-overlay', sizingMethod='scale')";
   transition: background-image 0.4s ease-in;
   height: 700px;
   width: 100%;
@@ -68,16 +68,16 @@
 
   //Responsive
   @media (min-width: 992px) {
-    background-image: url('../img/machine-learning/taxi-1200.jpg');
+    background-image: url('../img/machine-learning/taxi-1600-overlay.png');
   };
   @media (min-width: 1200px) {
-    background-image: url('../img/machine-learning/taxi-1440.jpg');
+    background-image: url('../img/machine-learning/taxi-1600-overlay.png');
   };
   @media (min-width: 1440px) {
-    background-image: url('../img/machine-learning/taxi-1600.jpg');
+    background-image: url('../img/machine-learning/taxi-1600-overlay.png');
   };
   @media (min-width: 1600px) {
-    background-image: url('../img/machine-learning/taxi-1920.jpg');
+    background-image: url('../img/machine-learning/taxi-1600-overlay.png');
   };
 
   //Animation
